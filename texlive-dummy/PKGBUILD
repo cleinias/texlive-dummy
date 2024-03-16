@@ -10,8 +10,8 @@ depends=()
 optdepends=()
 makedepends=()
 replaces=()
-conflicts=('texlive-bin' $(pacman -Sgq texlive texlive-lang))
-provides=('texlive-bin' $(pacman -Sgq texlive texlive-lang))
+conflicts=('texlive-bin' $(pacman -Sgq texlive-meta texlive-lang))
+provides=('texlive-bin' $(pacman -Sgq texlive-meta texlive-lang))
 
 build() {
    echo "Nothing to build"
